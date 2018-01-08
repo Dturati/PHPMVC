@@ -1,0 +1,16 @@
+{
+    "name": "david/php",
+    "authors": [
+        {
+            "name": "DavidTurati",
+            "email": "davidturati@gmail.com"
+        }
+    ],
+    
+    "require": {},
+    "autoload" : {
+        "psr-4":{
+            "App\\":"src"
+        }
+    }
+}
