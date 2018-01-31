@@ -1,0 +1,43 @@
+
+/* *{
+    border-bottom-color: blueviolet;
+    border-top-color: brown;
+    border-left-color: aquamarine;
+    border-top-width: 5px;
+}    */
+
+hr{
+    border-color: blueviolet;
+    border-top-width: .5px;
+}
+p {
+    color: blue;
+    font-size: 17px;
+    font-family: tahoma;
+}
+
+input[type="text"]{
+    border-color: blue;
+}
+
+input[type="email"]{
+    border-color: brown;
+}
+input[type="submit"]{
+    cursor: pointer;
+    width: 90px;
+
+}
+
+.formulario{
+    border: solid blue 0px;
+    text-align: center;
+}
+
+form{
+    text-align: center;
+    border:solid 1px;
+    border-color: aquamarine;
+    width: 200px;
+    padding: 30px;
+}

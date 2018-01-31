@@ -38,7 +38,6 @@ class Rotas
     public function run()
     {
         $data = $this->colletion->filter($this->method);
-
         foreach($data as $key => $value){
             $result = $this->checkUrl($key, $this->path);
             $callBack = $value;
@@ -63,7 +62,7 @@ class Rotas
         preg_match_all('/\{([^\}]*)\}/',$toFind, $variables);
         $regex = str_replace('/','\/',$toFind);
 
-        foreach($variables[1    ] as $k => $variable){
+        foreach($variables[1] as $k => $variable){
             $as = explode(":",$variable);
             $replacement = $as[1] ?? '([a-zA-Z0-9\-\_\ ]+)';
             $regex = str_replace($variables[$k], $replacement, $regex);
